@@ -44,6 +44,8 @@
   padding: 10px 16px;
   margin: 20px 0;
   border-bottom: 1px solid #fafafa;
+  display: flex;
+  justify-content: space-between;
 }
 
 .blog-preview:hover {
@@ -54,4 +56,16 @@
   font-size: 20px;
   color: #f1356d;
   margin-bottom: 8px;
+}
+
+.blog-preview button {
+  color: white;
+  font-weight: bold;
+  background-color: #f1356d;
+  cursor: pointer;
+  border: none;
+}
+
+.blog-preview button:hover {
+  background-color: #ff829d;
 }

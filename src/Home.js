@@ -10,6 +10,7 @@ const Home = () => {
     //     const newBlogs = data.filter(blog => blog.id !== id)
     //     setData(newBlogs)
     // }
+    
 
     return (
         <div className="home">

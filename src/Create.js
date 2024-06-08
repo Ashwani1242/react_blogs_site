@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 
 const Create = () => {
 
@@ -6,6 +7,8 @@ const Create = () => {
     const [subtitle, setSubtitle] = useState('');
     const [body, setBody] = useState('');
     const [author, setAuthor] = useState('');
+
+    const navigate = useNavigate();
 
     const [isLoading, setIsLoading] = useState(false);
 
@@ -21,6 +24,7 @@ const Create = () => {
             body: JSON.stringify(blog),
         }).then(() => {
             setIsLoading(false);
+            navigate('/');
         })
     }
 
